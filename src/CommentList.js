@@ -12,9 +12,11 @@ class CommentList {
   }
 
   render() {
-    this.allComments.map(function(comment) { // can't get this to render
-      `<ul>${comment.render()}</ul>` // => undefined
-    })
+    var html 
+    html += "<ul>"
+    html += this.allComments.map(function(comment){ return comment.render()}).join('')
+    html += "</ul>"
+    return html
   }
 
 }

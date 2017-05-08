@@ -13,7 +13,7 @@ $(document).ready(function(){
 
     console.log('4. added comment to commentList')
 
-    $('#comment-list').append(listOfComments.render())
+    $('#comment-list').html(listOfComments.render())
 
     console.log('5. appends comments')
 
